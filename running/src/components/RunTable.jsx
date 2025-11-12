@@ -4,7 +4,7 @@ const RunTable = () => {
   const [runs, setRuns] = useState([]);
 
   useEffect(() => {
-    fetch("/runs.json")
+    fetch(`${import.meta.env.BASE_URL}runs.json`)
       .then((res) => res.json())
       .then((data) => setRuns(data));
   }, []);

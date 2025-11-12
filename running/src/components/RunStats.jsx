@@ -9,7 +9,7 @@ const RunStats = () => {
   });
 
   useEffect(() => {
-    fetch("/runs.json")
+    fetch(`${import.meta.env.BASE_URL}runs.json`)
       .then((res) => res.json())
       .then((runs) => {
         if (runs.length === 0) return;
