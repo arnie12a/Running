@@ -1,4 +1,13 @@
+
 import React, { useEffect, useState } from "react";
+import {
+  Card,
+  CardContent,
+  Typography,
+  Grid,
+  Paper,
+  Box,
+} from "@mui/material";
 
 const RunStats = () => {
   const [stats, setStats] = useState({
@@ -19,7 +28,9 @@ const RunStats = () => {
         const totalSeconds = runs.reduce((sum, r) => {
           const parts = r.Time.split(":").map(Number);
           const seconds =
-            parts.length === 3 ? parts[0] * 3600 + parts[1] * 60 + parts[2] : parts[0] * 60 + parts[1];
+            parts.length === 3
+              ? parts[0] * 3600 + parts[1] * 60 + parts[2]
+              : parts[0] * 60 + parts[1];
           return sum + seconds;
         }, 0);
 
@@ -52,27 +63,67 @@ const RunStats = () => {
   }, []);
 
   return (
-    <div className="stats-container">
-      <h2>Overall Stats</h2>
-      <div className="stats-grid">
-        <div className="stat-card">
-          <h3>Total Mileage</h3>
-          <p>{stats.totalMiles} miles</p>
-        </div>
-        <div className="stat-card">
-          <h3>Last Month</h3>
-          <p>{stats.last6MonthsMiles} miles</p>
-        </div>
-        <div className="stat-card">
-          <h3>Total Time</h3>
-          <p>{stats.totalTime}</p>
-        </div>
-        <div className="stat-card">
-          <h3>Average Pace</h3>
-          <p>{stats.avgPace} /mile</p>
-        </div>
-      </div>
-    </div>
+    <Paper elevation={4} sx={{ maxWidth: 900, mx: "auto", p: 4 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",   // centers horizontally
+          justifyContent: "center", // centers vertically
+          textAlign: "center",
+        }}
+      >
+        <Typography variant="h5" gutterBottom>
+          Overall Stats
+        </Typography>
+
+        <Grid container spacing={3} justifyContent="center">
+          <Grid item xs={12} sm={6} md={3}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6" align="center">Total Mileage</Typography>
+                <Typography variant="body1" color="text.secondary" align="center">
+                  {stats.totalMiles} miles
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={3}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6" align="center">Last Month</Typography>
+                <Typography variant="body1" color="text.secondary" align="center">
+                  {stats.last6MonthsMiles} miles
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={3}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6" align="center">Total Time</Typography>
+                <Typography variant="body1" color="text.secondary" align="center">
+                  {stats.totalTime}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={3}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6" align="center">Average Pace</Typography>
+                <Typography variant="body1" color="text.secondary" align="center">
+                  {stats.avgPace} /mile
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
+      </Box>
+    </Paper>
   );
 };
 
