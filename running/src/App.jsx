@@ -1,35 +1,17 @@
-import React from "react";
-import RunChart from "./components/RunChart";
-import RunStats from "./components/RunStats";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Container,
-  Box,
-} from "@mui/material";
+// src/App.jsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MadisonPage from "./pages/Madison";
+import UltraPage from "./pages/Ultra50K";
+import Home from "./pages/Home";
 
-function App() {
+export default function App() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      {/* Header */}
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            My Run Tracker
-          </Typography>
-        </Toolbar>
-      </AppBar>
-
-      {/* Main Content */}
-      <Container sx={{ mt: 4 }}>
-        <RunStats />
-        <Box sx={{ mt: 4 }}>
-          <RunChart />
-        </Box>
-      </Container>
-    </Box>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/madison" element={<MadisonPage />} />
+        <Route path="/ultra" element={<UltraPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

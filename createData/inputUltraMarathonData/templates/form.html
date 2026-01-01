@@ -31,10 +31,16 @@
                                 <input type="number" step="0.01" name="Distance" class="form-control" required>
                             </div>
 
-                            <!-- Time -->
+                            <!-- Total Time -->
                             <div class="mb-3">
-                                <label class="form-label">Time (HH:MM:SS)</label>
-                                <input type="text" name="Time" class="form-control" required>
+                                <label class="form-label">Total Time (HH:MM:SS)</label>
+                                <input type="text" name="TotalTime" class="form-control" required>
+                            </div>
+
+                            <!-- Moving Time -->
+                            <div class="mb-3">
+                                <label class="form-label">Moving Time (HH:MM:SS)</label>
+                                <input type="text" name="MovingTime" class="form-control" required>
                             </div>
 
                             <!-- Average Pace -->
@@ -43,10 +49,22 @@
                                 <input type="text" name="AveragePace" class="form-control">
                             </div>
 
+                            <!-- Average Moving Pace -->
+                            <div class="mb-3">
+                                <label class="form-label">Average Moving Pace</label>
+                                <input type="text" name="AverageMovingPace" class="form-control">
+                            </div>
+
                             <!-- Elevation Gain -->
                             <div class="mb-3">
                                 <label class="form-label">Total Elevation Gain (ft)</label>
                                 <input type="number" name="ElevationGain" class="form-control">
+                            </div>
+
+                            <!-- Elevation Descent -->
+                            <div class="mb-3">
+                                <label class="form-label">Total Elevation Descent (ft)</label>
+                                <input type="number" name="ElevationDescent" class="form-control">
                             </div>
 
                             <!-- Terrain Type -->
@@ -74,7 +92,7 @@
                                 </select>
                             </div>
 
-                            <!-- Heart Rate -->
+                            <!-- Average Heart Rate -->
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Avg Heart Rate</label>
@@ -87,10 +105,16 @@
                                 </div>
                             </div>
 
-                            <!-- Calories -->
+                            <!-- Calories Burnt -->
                             <div class="mb-3">
                                 <label class="form-label">Calories Burned</label>
-                                <input type="number" name="Calories" class="form-control">
+                                <input type="number" name="CaloriesBurnt" class="form-control">
+                            </div>
+
+                            <!-- Estimated Sweat Loss -->
+                            <div class="mb-3">
+                                <label class="form-label">Estimated Sweat Loss</label>
+                                <input type="number" name="EstimatedSweatLoss" class="form-control">
                             </div>
 
                             <!-- Subjective Metrics -->
