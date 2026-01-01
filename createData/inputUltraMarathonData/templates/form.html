@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultra 50K Run Log</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4 text-center">Ultra 50K Run Log</h2>
+
+                        <form method="POST">
+
+                            <!-- Date -->
+                            <div class="mb-3">
+                                <label class="form-label">Date</label>
+                                <input type="date" name="Date" class="form-control" required>
+                            </div>
+
+                            <!-- Distance -->
+                            <div class="mb-3">
+                                <label class="form-label">Distance (miles)</label>
+                                <input type="number" step="0.01" name="Distance" class="form-control" required>
+                            </div>
+
+                            <!-- Time -->
+                            <div class="mb-3">
+                                <label class="form-label">Time (HH:MM:SS)</label>
+                                <input type="text" name="Time" class="form-control" required>
+                            </div>
+
+                            <!-- Average Pace -->
+                            <div class="mb-3">
+                                <label class="form-label">Average Pace</label>
+                                <input type="text" name="AveragePace" class="form-control">
+                            </div>
+
+                            <!-- Elevation Gain -->
+                            <div class="mb-3">
+                                <label class="form-label">Total Elevation Gain (ft)</label>
+                                <input type="number" name="ElevationGain" class="form-control">
+                            </div>
+
+                            <!-- Terrain Type -->
+                            <div class="mb-3">
+                                <label class="form-label">Terrain Type</label>
+                                <select name="TerrainType" class="form-select">
+                                    <option>Road</option>
+                                    <option>Trail</option>
+                                    <option>Technical Trail</option>
+                                    <option>Treadmill</option>
+                                </select>
+                            </div>
+
+                            <!-- Run Type -->
+                            <div class="mb-3">
+                                <label class="form-label">Run Type</label>
+                                <select name="RunType" class="form-select">
+                                    <option>Easy</option>
+                                    <option>Long Run</option>
+                                    <option>Workout</option>
+                                    <option>Hill Repeats</option>
+                                    <option>Recovery</option>
+                                    <option>Race Simulation</option>
+                                    <option>Race</option>
+                                </select>
+                            </div>
+
+                            <!-- Heart Rate -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Avg Heart Rate</label>
+                                    <input type="number" name="AvgHeartRate" class="form-control">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Max Heart Rate</label>
+                                    <input type="number" name="MaxHeartRate" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- Calories -->
+                            <div class="mb-3">
+                                <label class="form-label">Calories Burned</label>
+                                <input type="number" name="Calories" class="form-control">
+                            </div>
+
+                            <!-- Subjective Metrics -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">How I Felt (1–5)</label>
+                                    <input type="number" min="1" max="5" name="Felt" class="form-control">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Leg Fatigue (1–5)</label>
+                                    <input type="number" min="1" max="5" name="LegFatigue" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- Notes -->
+                            <div class="mb-4">
+                                <label class="form-label">Notes</label>
+                                <textarea name="Notes" class="form-control" rows="4"></textarea>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    Save Run
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

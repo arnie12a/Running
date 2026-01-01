@@ -18,7 +18,7 @@ const RunStats = () => {
   });
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}runs.json`)
+    fetch(`${import.meta.env.BASE_URL}madisonRuns.json`)
       .then((res) => res.json())
       .then((runs) => {
         if (runs.length === 0) return;

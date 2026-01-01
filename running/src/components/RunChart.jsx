@@ -34,7 +34,7 @@ const RunChart = () => {
   const [granularity, setGranularity] = useState("Daily"); // Only input left
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}runs.json`)
+    fetch(`${import.meta.env.BASE_URL}madisonRuns.json`)
       .then((res) => res.json())
       .then((data) => {
         setRuns(data);
