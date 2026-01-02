@@ -1,2 +1,2 @@
-Date,Distance,Time,AveragePace,ElevationGain,TerrainType,RunType,AvgHeartRate,MaxHeartRate,Calories,Felt,LegFatigue,Notes
+Date,Distance,TotalTime,MovingTime,AveragePace,AverageMovingPace,ElevationGain,ElevationDescent,TerrainType,RunType,AvgHeartRate,MaxHeartRate,CaloriesBurnt,EstimatedSweatLoss,Felt,LegFatigue,Notes
 2025-12-22,1.02,00:10:02,00:09:52,9:53,9:42,16,13,Road,Easy,137,152,124,166,4,1,First run of my training for my first 50km race. Very excited for the training that is ahead as I become the best mental and physical version of myself. 

@@ -1,5 +1,5 @@
 // src/components/ultra/UltraStats.jsx
-import ultraRuns from "../../../public/ultra50km.json";
+import ultraRuns from "../../../dist/ultra50km.json";
 
 export default function UltraStats() {
   const totalRuns = ultraRuns.length;

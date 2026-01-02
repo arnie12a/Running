@@ -1,5 +1,5 @@
 // src/components/madison/MadisonStats.jsx
-import madisonRuns from "../../../public/madisonRuns.json"
+import madisonRuns from "../../../dist/madisonRuns.json"
 
 export default function MadisonStats() {
   const totalRuns = madisonRuns.length;
