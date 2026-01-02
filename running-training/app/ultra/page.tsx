@@ -1,5 +1,4 @@
 import runs from "@/data/ultra50km.json"
-import RunCard from "@/components/RunCard"
 
 export default function UltraPage() {
   return (

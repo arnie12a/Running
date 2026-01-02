@@ -1,5 +1,4 @@
 import runs from "@/data/madisonRuns.json"
-import RunCard from "@/components/RunCard"
 
 export default function MadisonPage() {
   return (
