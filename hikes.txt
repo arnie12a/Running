@@ -1,0 +1,86 @@
+Activity Type
+The type of activity performed, such as hiking or walking.
+
+Date
+The calendar date on which the hike took place.
+
+Favorite
+Indicates whether the hike was marked as a favorite by the user.
+
+Title
+The custom or system-generated name given to the hike.
+
+Distance
+Total distance covered during the hike (usually miles or kilometers).
+
+Calories
+Estimated number of calories burned during the hike.
+
+Time
+Total recorded duration of the hike.
+
+Avg HR (Average Heart Rate)
+The average heart rate throughout the hike, measured in beats per minute (bpm).
+
+Max HR (Maximum Heart Rate)
+The highest heart rate recorded during the hike.
+
+Aerobic TE (Aerobic Training Effect)
+A score (typically from 0.0 to 5.0) estimating how much the hike improved aerobic fitness.
+
+Avg Cadence
+Average number of steps taken per minute during the hike.
+
+Max Cadence
+Highest number of steps per minute recorded during the hike.
+
+Avg Pace
+Average time taken to cover one unit of distance (for example, minutes per mile or kilometer).
+
+Best Pace
+Fastest pace achieved during any portion of the hike.
+
+Ascent
+Total elevation gained during the hike.
+
+Total Descent
+Total elevation lost during the hike.
+
+Avg Stride Length
+Average distance covered per step during the hike.
+
+Training Stress Score (TSS)
+A composite score that measures hike intensity and duration to estimate overall training load.
+
+Steps
+Total number of steps taken during the hike.
+
+Body Battery Drain
+Estimated reduction in the body’s energy reserves caused by the hike.
+
+Min Temp
+Lowest recorded ambient temperature during the hike.
+
+Decompression
+A recovery-related metric estimating how much rest may be needed after the hike, depending on the device ecosystem.
+
+Best Lap Time
+Fastest time recorded for a single lap or segment during the hike.
+
+Number of Laps
+Total number of laps or segments recorded during the hike.
+
+Max Temp
+Highest recorded ambient temperature during the hike.
+
+Moving Time
+Total time during which movement was detected, excluding pauses or rest stops.
+
+Elapsed Time
+Total clock time from the start to the end of the hike, including all stops.
+
+Min Elevation
+Lowest elevation reached during the hike.
+
+Max Elevation
+Highest elevation reached during the hike.

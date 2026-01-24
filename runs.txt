@@ -1,0 +1,107 @@
+Activity Type
+The type of workout performed (for example: running, cycling, hiking, or swimming).
+
+Date
+The calendar date on which the activity took place.
+
+Favorite
+Indicates whether the activity was marked as a favorite by the user.
+
+Title
+The custom or system-generated name given to the activity.
+
+Distance
+Total distance covered during the activity (usually miles or kilometers).
+
+Calories
+Estimated number of calories burned during the activity.
+
+Time
+Total recorded duration of the activity.
+
+Avg HR (Average Heart Rate)
+The average heart rate throughout the activity, measured in beats per minute (bpm).
+
+Max HR (Maximum Heart Rate)
+The highest heart rate recorded during the activity.
+
+Aerobic TE (Aerobic Training Effect)
+A score (typically from 0.0 to 5.0) estimating how much the activity improved aerobic fitness.
+
+Avg Run Cadence
+Average number of steps taken per minute while running.
+
+Max Run Cadence
+Highest number of steps per minute recorded during the run.
+
+Avg Pace
+Average time taken to cover one unit of distance (for example, minutes per mile or kilometer).
+
+Best Pace
+Fastest pace achieved over any segment of the activity.
+
+Total Ascent
+Total elevation gained during the activity.
+
+Total Descent
+Total elevation lost during the activity.
+
+Avg Stride Length
+Average distance covered per step during the activity.
+
+Avg Vertical Ratio
+The ratio of vertical movement to forward movement while running, often used as a running efficiency metric.
+
+Avg Vertical Oscillation
+Average amount of vertical bounce per stride while running.
+
+Avg Ground Contact Time
+Average time each foot stays in contact with the ground per step, measured in milliseconds.
+
+Avg GAP (Grade Adjusted Pace)
+Pace adjusted to account for elevation changes, reflecting the effort as if the terrain were flat.
+
+Normalized Power (NP)
+A weighted power metric that accounts for changes in intensity, providing a better estimate of true effort than simple average power.
+
+Training Stress Score (TSS)
+A composite score that measures workout intensity and duration to estimate overall training load.
+
+Avg Power
+Average power output during the activity, typically measured in watts.
+
+Max Power
+Highest recorded power output during the activity.
+
+Steps
+Total number of steps taken during the activity.
+
+Body Battery Drain
+Estimated reduction in the body’s energy reserves due to the activity.
+
+Min Temp
+Lowest recorded ambient temperature during the activity.
+
+Decompression
+A recovery-related metric that estimates how much rest may be needed after the activity, depending on the device ecosystem.
+
+Best Lap Time
+Fastest time recorded for a single lap during the activity.
+
+Number of Laps
+Total number of laps recorded in the activity.
+
+Max Temp
+Highest recorded ambient temperature during the activity.
+
+Moving Time
+Total time during which movement was detected (pauses and stops are excluded).
+
+Elapsed Time
+Total clock time from the start to the end of the activity, including pauses.
+
+Min Elevation
+Lowest elevation reached during the activity.
+
+Max Elevation
+Highest elevation reached during the activity.
